@@ -1,9 +1,9 @@
-/*SHOW MENU*/
+/*====================================SHOW MENU====================================*/
 const navMenu = document.getElementById('nav-menu'),
 navToggle = document.getElementById('nav-toggle'),
 navClose = document.getElementById('nav-close')
 
-/*MENU SHOW*/
+/*====================================MENU SHOW====================================*/
 /*Validate if constant exists*/
 if(navToggle) {
     navToggle.addEventListener('click', () => {
@@ -11,7 +11,7 @@ if(navToggle) {
     })
 } 
 
-/*MENU HIDDEN*/
+/*====================================MENU HIDDEN====================================*/
 /*Validate if constant exists*/
 if(navClose) {
     navClose.addEventListener('click', () => {
@@ -19,16 +19,17 @@ if(navClose) {
     })
 }
 
-/*REMOVE MENU MOBILE*/
+/*====================================REMOVE MENU MOBILE====================================*/
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
+    // when we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*SHADOW HEADER*/ 
+/*====================================SHADOW HEADER====================================*/ 
 const shadowHeader = () => {
     const header = document.getElementById('header')
     // when the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
@@ -36,3 +37,11 @@ const shadowHeader = () => {
                     : header.classList.remove('shadow-header') 
 }
 window.addEventListener('scroll', shadowHeader)
+
+/*====================================EMAIL JS====================================*/ 
+
+/*====================================SHOW SCROLL UP====================================*/ 
+
+/*====================================SCROLL SECTIONS ACTIVE LINK====================================*/ 
+
+/*====================================DARK LIGHT THEME====================================*/ 
